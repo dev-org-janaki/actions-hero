@@ -1,0 +1,16 @@
+name: Create a comment on new issues
+
+on:
+  push:
+    branches:
+      - main
+
+permissions: write-all
+
+jobs:
+  print-with-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "hello world"
+        run: echo 'Hello world!'
+        shell: bash
